@@ -1,0 +1,445 @@
+:root {
+  --black: #000000;
+  --very-light-pink: #d9d9d9;
+  --white: #e8e8e8;
+  --sepia: #8b572a;
+  --charcoal-grey: #313538;
+  --white-two: #ffffff;
+}
+
+#loading{
+  width:50px;
+  z-index: 5;
+  position: fixed;
+  right: calc(50% - 25px);
+  bottom: calc(50% - 25px);
+  display: none;
+}
+#loading-cover{
+  width: 100%;
+  height:100%;
+  z-index: 4;
+  position: fixed;
+  opacity: 0.4;
+  background-color: gray;
+  display: none;
+}
+
+#cart {
+  max-width: 1112px;
+  padding: 20px 24px 37px;
+  margin-top: 92px;
+}
+
+.cart__header {
+  line-height: 19px;
+  padding-right: 31px;
+  padding-bottom: 10px;
+  border-bottom: 1px #3f3a3a solid;
+}
+
+.cart__title {
+  width: 280px;
+  font-weight: bold;
+}
+
+.header-text {
+  display: none;
+  width: 173px;
+  text-align: center;
+}
+.header-none {
+  display: none;
+  width: 84px;
+}
+
+.item {
+  padding: 20px 0px;
+  margin-top: 30px;
+  border-bottom: 1px #3f3a3a solid;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-img {
+  width: 114px;
+  margin-right: 20px;
+  order: 0;
+}
+
+.item-detail {
+  width: calc(100% - 178px);
+  line-height: 19px;
+  order: 1;
+  color: #3f3a3a;
+}
+.item-detail .id {
+  margin: 18px 0px 0px;
+}
+.item-detail .color {
+  margin: 22px 0px 0px;
+}
+.item-detail .size {
+  margin: 10px 0px 0px;
+}
+
+.item-quantity,
+.item-price,
+.item-subtotal {
+  margin-top: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #3f3a3a;
+}
+
+.item-quantity {
+  width: calc(100% / 3);
+  order: 3;
+}
+.quantity__select {
+  width: 80px;
+  height: 30px;
+  padding: 0px 10px 0px 17px;
+  border: 1px #979797 solid;
+  border-radius: 8px;
+  background-color: #f3f3f3;
+}
+
+.item-price {
+  width: calc(100% / 3);
+  order: 4;
+}
+
+.item-subtotal {
+  width: calc(100% / 3);
+  order: 5;
+}
+
+.discard {
+  order: 2;
+  margin: auto 0px;
+}
+
+.discard img {
+  width: 44px;
+  margin: auto 0px;
+}
+
+.shipment-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e8e8e8;
+  color: #3f3a3a;
+  font-size: 14px;
+}
+
+.shipment__question {
+  line-height: 17px;
+}
+
+.shipment__select {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  padding: 0px 10px 0px 17px;
+  border: 1px #979797 solid;
+  border-radius: 8px;
+  background-color: #f3f3f3;
+}
+
+.pay-text {
+  margin-top: 20px;
+}
+
+.reminder {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #3f3a3a;
+}
+
+.form-buyer,
+.form-payment {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #3f3a3a;
+}
+
+.form-buyer__header,
+.form-payment__header {
+  padding-bottom: 10px;
+  border-bottom: 1px #3f3a3a solid;
+  font-weight: bold;
+  line-height: 19px;
+}
+
+.buyer__question,
+.payment__question {
+  margin-top: 20px;
+}
+
+.question-title {
+  line-height: 17px;
+}
+
+input {
+  padding: 0px;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.buyer__input,
+.payment__input,
+#cc-number {
+  width: calc(100% - 10px);
+  height: 28px;
+  margin-top: 10px;
+  padding: 0px 4px;
+  border: 1px #979797 solid;
+  border-radius: 8px;
+}
+
+.buyer__time {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.buyer__time input {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+.buyer__time label {
+  margin-right: 18px;
+  line-height: 26px;
+}
+
+.payment__input::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+.summary {
+  margin-top: 37px;
+  border-top: 1px #3f3a3a solid;
+}
+
+.summary__info {
+  width: 240px;
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: calc(100% - 240px);
+}
+
+.summary__subtotal,
+.summary__freight,
+.summary__total {
+  display: flex;
+  align-items: center;
+  padding-left: 13px;
+}
+
+.summary__category {
+  flex-grow: 1;
+}
+
+.summary__subtotal {
+  margin-top: 40px;
+}
+
+.summary__freight {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px #3f3a3a solid;
+}
+
+.summary__total {
+  margin-top: 20px;
+}
+
+.value {
+  font-size: 30px;
+  line-height: 36px;
+  margin-left: 10px;
+}
+
+#checkout {
+  width: 100%;
+  height: 60px;
+  font-size: 16px;
+  letter-spacing: 3.2px;
+  margin-top: 36px;
+  color: white;
+  background-color: black;
+  border: none;
+  transition: all .2s linear;
+}
+#checkout:hover{
+  background-color: var(--sepia);
+}
+
+.discard,
+.buyer__time input,
+#checkout {
+  cursor: pointer;
+}
+
+@media (min-width: 769px) {
+  #cart {
+    padding: 47px 24px 128px;
+    margin: 92px auto 0px;
+  }
+
+  .cart__header {
+    padding-bottom: 16px;
+    border-bottom: none;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .cart__title {
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+
+  .header-text,
+  .header-none {
+    display: block;
+  }
+
+  .items {
+    border: 1px #979797 solid;
+    padding: 10px 31px 40px;
+  }
+
+  .item {
+    flex-wrap: nowrap;
+    border: none;
+    padding: 0px;
+  }
+
+  .item-detail {
+    width: auto;
+    flex-grow: 1;
+  }
+
+  .item-quantity,
+  .item-price,
+  .item-subtotal {
+    width: 173px;
+    margin-top: 0px;
+    padding: calc((152px - 30px) / 2) 0px;
+  }
+
+  .item-quantity {
+    order: 2;
+  }
+
+  .item-price {
+    order: 3;
+  }
+
+  .subtotal {
+    order: 4;
+  }
+
+  .discard {
+    order: 5;
+  }
+
+  .item-text {
+    display: none;
+  }
+
+  .discard {
+    padding-left: 40px;
+  }
+  .discard img {
+    position: auto;
+  }
+
+  .shipment-form {
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 26px;
+    padding: 22px 0px 22px 30px;
+  }
+
+  .pay-text {
+    margin-top: 0px;
+  }
+
+  .shipment__select {
+    width: 171px;
+    padding: 0px 14px 0px 17px;
+    margin: 0px 82px 0px 20px;
+    font-size: 14px;
+  }
+
+  .reminder {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .form-buyer__header,
+  .form-payment__header {
+    padding-bottom: 16px;
+  }
+
+  .buyer__question,
+  .payment__question {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .question-title {
+    width: 110px;
+  }
+
+  .buyer__input,
+  .payment__input,
+  #cc-number {
+    width: 564px;
+    margin-top: 0px;
+  }
+
+  .buyer__time {
+    margin-top: 0px;
+  }
+
+  .buyer__time input {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+  }
+
+  .buyer__time label {
+    margin-right: 30px;
+    line-height: 26px;
+  }
+
+  .form-buyer,
+  .form-payment {
+    font-size: 16px;
+  }
+
+  #checkout {
+    width: 240px;
+    margin-left: calc(100% - 240px);
+    margin-top: 50px;
+    font-size: 20px;
+    letter-spacing: 4px;
+  }
+}
+
+@media (min-width: 1281px) {
+  #cart {
+    margin: 140px auto 0px;
+  }
+}

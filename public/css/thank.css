@@ -1,0 +1,38 @@
+.thank {
+  margin-top: 92px;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thank h2 {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 16px;
+  border-bottom: 1px #979797 solid;
+}
+
+.thank h3 {
+  padding-bottom: 15px;
+  margin-top: 24px;
+}
+
+#order-num {
+  background-color: #eeeeee;
+  padding: 5px 10px;
+}
+
+.thank a {
+  margin-top: 36px;
+  color: #3f3a3a;
+}
+.thank a:hover {
+  color: #8b572a;
+}
+
+@media (min-width: 1281px) {
+  .thank {
+    margin-top: 140px;
+  }
+}

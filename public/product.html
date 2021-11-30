@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精選商品 | STYLiSH</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <meta name="description" content="由STYLiSH嚴格把關，在舒適生活中輕鬆穿起個人風格">
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-207395163-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-207395163-1');
+    </script>
+</head>
+
+<body>
+    <div class="desktop-header">
+        <a href="./index.html"><img class="logo-STYLiSH" src="images/logo.png" alt="STYLiSH logo"></a>
+        <div class="desktop-nav">
+            <a class="nav-item nav-women" href="./index.html?tag=women">
+                女裝
+            </a>
+            <a class="nav-item nav-men" href="./index.html?tag=men">
+                男裝
+            </a>
+            <a class="nav-item nav-accessories" href="./index.html?tag=accessories">
+                配件
+            </a>
+        </div>
+        <input class="search">
+        <a class="cart" href="./cart.html">
+            <img src="images/cart-desktop.png" alt="cart">
+            <div class="count">0</div>
+        </a>
+        <div class="member">
+            <img src="images/member-desktop.png" alt="member">
+        </div>
+    </div>
+
+    <div class="mobile-header">
+        <a href="./index.html"><img class="logo-STYLiSH" src="images/logo.png" alt="STYLiSH logo"></a>
+        <input class="search">
+    </div>
+
+    <div class="mobile-nav">
+        <a class="nav-item nav-women" href="./index.html?tag=women">
+            女裝
+        </a>
+        <a class="nav-item nav-men" href="./index.html?tag=men">
+            男裝
+        </a>
+        <a class="nav-item nav-accessories" href="./index.html?tag=accessories">
+            配件
+        </a>
+    </div>
+
+    <div class="mobile-footer">
+        <a class="cart" href="./cart.html">
+            <img src="images/cart-mobile.png" alt="cart">
+            <div class="count">0</div>
+            <span>購物車</span>
+        </a>
+        <div class="member">
+            <img src="images/member-mobile.png" alt="member">
+            <span>會員</span>
+        </div>
+    </div>
+
+    <main>
+        <div class="product">
+            <img class="product-main-image">
+            <div class="product-detail">
+                <div class="product-title"></div>
+                <div class="product-id"></div>
+                <div class="product-price"></div>
+                <div class="product-colors">
+                    <div class="varient-name">顏色</div>
+                    <div class="color-group">
+                    </div>
+                </div>
+                <div class="product-sizes">
+                    <div class="varient-name">尺寸</div>
+                    <div class="size-group">
+                    </div>
+                </div>
+                <div class="product-quantity">
+                    <div class="varient-name">數量</div>
+                    <div class="product-quantity-input">
+                        <button class="quantity-btn decrement">-</button>
+                        <div id="quantity">1</div>
+                        <button class="quantity-btn increment">+</button>
+                    </div>
+                </div>
+                <button id="add-to-cart">加入購物車</button>
+                <div class="product-note"></div>
+                <div class="product-texture"></div>
+                <div class="product-description"></div>
+                <div class="product-wash"></div>
+                <div class="product-place"></div>
+            </div>
+            <div class="more-info">
+                <div class="seperator">
+                    更多產品資訊
+                </div>
+                <div class="product-story"></div>
+                <div class="more-img">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="/">關於 Stylish</a>
+            <a href="/">服務條款</a>
+            <a href="/">隱私政策</a>
+            <a href="/">聯絡我們</a>
+            <a href="/">FAQ</a>
+        </nav>
+        <div class="link">
+            <img src="images/line.png" alt="LINE">
+            <img src="images/twitter.png" alt="Twitter">
+            <img src="images/facebook.png" alt="Facebook">
+        </div>
+        <div class="copyright">
+            © 2021. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+<script type="module" src="js/base.js"></script>
+<script type="module" src="js/product.js"></script>
+
+</html>

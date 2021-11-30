@@ -1,0 +1,22 @@
+{
+  "name": "viggochang",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.25.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.4.0",
+    "prettier-eslint": "^13.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack" 
+  },
+  "author": "",
+  "license": "ISC"
+}

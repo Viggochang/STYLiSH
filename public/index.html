@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁 | STYLiSH</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <meta name="description" content="STYLiSH提供各式衣著與配件，讓你透過穿衣展現個人風格，美好生活提案由STYLiSH開始。">
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/page.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-207395163-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-207395163-1');
+    </script>
+</head>
+
+<body>
+    <div class="desktop-header">
+        <a href="./index.html"><img class="logo-STYLiSH" src="images/logo.png" alt="STYLiSH logo"></a>
+        <div class="desktop-nav">
+            <a class="nav-item nav-women" href="?tag=women">
+                女裝
+            </a>
+            <a class="nav-item nav-men" href="?tag=men">
+                男裝
+            </a>
+            <a class="nav-item nav-accessories" href="?tag=accessories">
+                配件
+            </a>
+        </div>
+        <input class="search">
+        <a class="cart" href="./cart.html">
+            <img src="images/cart-desktop.png" alt="cart">
+            <div class="count">0</div>
+        </a>
+        <div class="member">
+            <img src="images/member-desktop.png" alt="member">
+        </div>
+    </div>
+
+    <div class="mobile-header">
+        <a href="./index.html"><img class="logo-STYLiSH" src="images/logo.png" alt="STYLiSH logo"></a>
+        <input class="search">
+    </div>
+
+    <div class="mobile-nav">
+        <a class="nav-item nav-women" href="?tag=women">
+            女裝
+        </a>
+        <a class="nav-item nav-men" href="?tag=men">
+            男裝
+        </a>
+        <a class="nav-item nav-accessories" href="?tag=accessories">
+            配件
+        </a>
+    </div>
+
+    <div class="mobile-footer">
+        <a class="cart" href="./cart.html">
+            <img src="images/cart-mobile.png" alt="cart">
+            <div class="count">0</div>
+            <span>購物車</span>
+        </a>
+        <div class="member">
+            <img src="images/member-mobile.png" alt="member">
+            <span>會員</span>
+        </div>
+    </div>
+
+    <main>
+        <div class="banner"></div>
+        <div class="container"></div>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="/">關於 Stylish</a>
+            <a href="/">服務條款</a>
+            <a href="/">隱私政策</a>
+            <a href="/">聯絡我們</a>
+            <a href="/">FAQ</a>
+        </nav>
+        <div class="link">
+            <img src="images/line.png" alt="LINE">
+            <img src="images/twitter.png" alt="Twitter">
+            <img src="images/facebook.png" alt="Facebook">
+        </div>
+        <div class="copyright">
+            © 2021. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- GetButton.io widget -->
+    <script type="text/javascript">
+        (function () {
+            var options = {
+                facebook: "100251822432765", // Facebook page ID
+                call_to_action: "Message us", // Call to action
+                position: "right", // Position may be 'right' or 'left'
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+    <!-- /GetButton.io widget -->
+    <script type="module" src="js/base.js"></script>
+    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/campaign.js"></script>
+
+</body>
+
+</html>

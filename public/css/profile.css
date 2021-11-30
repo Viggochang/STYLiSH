@@ -1,0 +1,35 @@
+.profile {
+  margin-top: 92px;
+  padding: 100px 20px;
+}
+
+.profile h2 {
+  padding-bottom: 16px;
+  border-bottom: 1px #979797 solid;
+  text-align: center;
+}
+
+.member-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture {
+  width: 200px;
+  margin: 0px 24px;
+}
+
+.logout {
+  width: 60px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+@media (min-width: 1281px) {
+  .profile {
+    margin-top: 140px;
+  }
+}
